@@ -21,3 +21,17 @@ export const getContent = async ({params}, dir = "") => {
         }
     }
 }
+
+export const getArticles = async () => {
+    const files = fs.readdirSync(path.join(process.cwd(), "content", "blog"))
+    const htmlContent = files.map(file => {
+        const filepath = path.join(process.cwd(), "content" + "/blog") + "/" + file;
+        return fs.readFileSync(filepath, "utf8")
+    })
+
+    return {
+        props: {
+            htmlContent
+        }
+    }
+}
