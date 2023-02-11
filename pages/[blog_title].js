@@ -9,8 +9,8 @@ const blog_title = ({htmlContent}) => {
     )
 }
 
-export const getStaticProps = (params) => getContent(params, "/blog");
+export const getStaticProps = (params) => getContent(params);
 
-export const getStaticPaths = () => generateFilePaths("/blog");
+export const getStaticPaths = () => generateFilePaths();
 
 export default blog_title;

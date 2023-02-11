@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: 350;
+  text-align: left;
+}
+
+.subTitle {
+  font-size: 14px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
