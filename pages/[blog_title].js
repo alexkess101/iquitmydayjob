@@ -1,11 +1,9 @@
 import {getContent, generateFilePaths} from "@/utils/contentUtils";
-import {getContentProperties} from "@/utils/formatUtils";
+import BlogTemplate from "@/components/BlogTemplate";
 
-const blog_title = ({htmlContent}) => {
-    const contentProperties = getContentProperties(htmlContent);
-
+const BlogPage = ({htmlContent}) => {
     return (
-        <div>{contentProperties.bodyContent}</div>
+        <BlogTemplate htmlContent={htmlContent}/>
     )
 }
 
@@ -13,4 +11,4 @@ export const getStaticProps = (params) => getContent(params);
 
 export const getStaticPaths = () => generateFilePaths();
 
-export default blog_title;
+export default BlogPage;
