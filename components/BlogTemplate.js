@@ -2,7 +2,6 @@ import styles from "./blogTemplate.module.scss";
 import MainTheme from "./MainTheme";
 import Content from "./Content";
 import {getContentProperties} from "@/utils/formatUtils";
-import Spacer from "./Spacer";
 import Image from "next/image";
 
 const BlogTemplate = ({htmlContent}) => {
