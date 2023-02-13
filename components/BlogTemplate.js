@@ -18,8 +18,6 @@ const BlogTemplate = ({htmlContent}) => {
 				<h1 className={styles.title}>{pageContext.title}</h1>
 				{pageContext?.subTitle && <div className={styles.subTitle}>{pageContext.subTitle}</div>}
 
-				{/*<Spacer amount={"25"}/>*/}
-
 				{image && <Image
 					className={styles.headerImage}
 					src={image.src}
