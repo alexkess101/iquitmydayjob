@@ -13,10 +13,12 @@ const BlogTemplate = ({htmlContent}) => {
 	return (
 		<MainTheme headContent={contentProperties.headContent}>
 			<Content>
-				<h1>{pageContext.title}</h1>
+				<a href={"/"} className={styles.breadCrumb}>&larr; Back</a>
+
+				<h1 className={styles.title}>{pageContext.title}</h1>
 				{pageContext?.subTitle && <div className={styles.subTitle}>{pageContext.subTitle}</div>}
 
-				<Spacer amount={"50"}/>
+				{/*<Spacer amount={"25"}/>*/}
 
 				{image && <Image
 					className={styles.headerImage}
@@ -26,7 +28,7 @@ const BlogTemplate = ({htmlContent}) => {
 					height={image.height}
 				/>}
 				<div className={styles.authorWrapper}>
-					<p>{pageContext.author.name}</p>
+					<p className={styles.author}>{pageContext.author.name}</p>
 					<div className={styles.date}>{pageContext.datePublished}</div>
 				</div>
 			</Content>

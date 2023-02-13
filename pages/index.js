@@ -17,9 +17,6 @@ const Home = ({htmlContent}) => {
 			<p>
 				Hopefully this blog can be used as a biography one day.
 			</p>
-			<p>
-				Let's connect
-			</p>
 
 			<Spacer amount={"50"}/>
 

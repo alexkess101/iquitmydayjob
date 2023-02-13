@@ -1,3 +1,16 @@
+.breadCrumb {
+  font-size: 17px;
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  top: 25px;
+  left: 10px;
+}
+
+.title {
+  margin-top: 10px;
+}
+
 .subTitle {
   font-size: 17px;
 }
@@ -18,15 +31,21 @@
   .date {
 	font-size: 14px;
   }
+
+  .author {
+	font-size: 18px;
+  }
 }
+
 
 .bodyWrapper {
   width: 100%;
-  max-width: 700px;
+  max-width: 650px;
 
   p {
 	margin: 15px 0;
-	line-height: 1.5rem;
+	line-height: 2.5rem;
+	font-size: 17px;
   }
 
   h2 {
