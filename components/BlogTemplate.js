@@ -2,8 +2,8 @@ import styles from "./blogTemplate.module.scss";
 import MainTheme from "./MainTheme";
 import Content from "./Content";
 import {getContentProperties} from "@/utils/formatUtils";
-import Image from "next/image";
 import Spacer from "@/components/Spacer";
+import Image from "next/image";
 
 const BlogTemplate = ({htmlContent}) => {
 	const contentProperties = getContentProperties(htmlContent)
@@ -17,7 +17,7 @@ const BlogTemplate = ({htmlContent}) => {
 
 				<h1 className={styles.title}>{pageContext.title}</h1>
 				{pageContext?.subTitle && <div className={styles.subTitle}>{pageContext.subTitle}</div>}
-				<Spacer amount={"100"}/>
+				<Spacer amount={"50"}/>
 				{image && <Image
 					className={styles.headerImage}
 					src={image.src}

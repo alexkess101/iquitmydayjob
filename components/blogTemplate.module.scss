@@ -9,6 +9,7 @@
 
 .title {
   margin-top: 10px;
+  padding: 70px 0 20px;
 }
 
 .subTitle {
@@ -29,11 +30,11 @@
   flex-direction: column;
 
   .date {
-	font-size: 14px;
+	font-size: 16px;
   }
 
   .author {
-	font-size: 18px;
+	font-size: 17px;
   }
 }
 
@@ -70,3 +71,21 @@
   }
 }
 
+
+@media only screen and (min-width: 425px) {
+  .bodyWrapper {
+	p {
+	  font-size: 19px;
+	}
+  }
+
+  .authorWrapper {
+	.author {
+	  font-size: 19px;
+	}
+  }
+
+  .title {
+	padding-top: 40px;
+  }
+}
